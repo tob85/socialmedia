@@ -28,6 +28,7 @@ Feature: Access Control and Permissions
     Then posts awaiting approval are hidden from default view
     And only admins/operators can approve or reject
 
+
   @circles
   @permissions
   Scenario Outline: Action permissions by role

@@ -45,6 +45,7 @@ Feature: User Authentication and Registration
 
     Examples:
       | credential_type | expected_action                    |
+      |-----------------|------------------------------------|
       | wrong_password  | show password incorrect message    |
       | wrong_username  | show user not found message        |
       | empty_fields    | require all fields to be populated |
@@ -61,5 +62,6 @@ Feature: User Authentication and Registration
 
     Examples:
       | reset_email      | reset_success_expected             |
+      |------------------|------------------------------------|
       | test@example.com | success, new password can be set   |
       | invalid@domain   | no account found, security warning |

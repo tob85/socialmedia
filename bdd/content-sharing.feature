@@ -31,7 +31,8 @@ Feature: Content Sharing and Posts
     Then media should be displayed in the post for all viewers
     
     Examples:
-      | file_type   | max_size_mb | display_result        | compression_needed |
-      | jpeg        | 5           | thumbnail + full view | Yes                 |
-      | png         | 10          | original quality      | No                  |
-      | mp4 video   | 50          | streamed, not full download  | Yes                  |
+      | file_type   | max_size_mb | display_result               | compression_needed |
+      |-------------|-------------|------------------------------|--------------------|
+      | jpeg        | 5           | thumbnail + full view        | Yes                |
+      | png         | 10          | original quality             | No                 |
+      | mp4 video   | 50          | streamed, not full download  | Yes                |
