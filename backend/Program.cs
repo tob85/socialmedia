@@ -1,18 +1,48 @@
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
+using Backend.Data;
+using Backend.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddControllers();
+builder.Services
+    .AddDataProtection()
+    .PersistKeysToFileSystem(
+        new DirectoryInfo(Path.Combine(builder.Environment.ContentRootPath, "Keys"))
+    )
+;
+builder.Services
+    .AddDbContext<Db>(opts =>
+        opts.UseSqlite(
+            builder.Configuration.GetConnectionString("DefaultConnection")
+        )
+    )
+;
+builder.Services
+    .AddIdentityCore<User>(opts => {
+        opts.SignIn.RequireConfirmedEmail = true;
+    })
+    .AddEntityFrameworkStores<Db>()
+    .AddDefaultTokenProviders()
+;
+    // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+else
+{
+    app.UseHttpsRedirection();
+}
 
-app.UseHttpsRedirection();
 
 var summaries = new[]
 {
@@ -32,6 +62,8 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+app.MapControllers();
 
 app.Run();
 
