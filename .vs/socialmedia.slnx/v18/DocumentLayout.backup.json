@@ -1,0 +1,255 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\socialmedia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\models\\autoemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\models\\autoemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\backend\\tests\\obj\\debug\\net10.0\\socialmediaapi.tests.globalusings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\backend\\tests\\obj\\debug\\net10.0\\socialmediaapi.tests.globalusings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\obj\\Debug\\net10.0\\socialmediaapi.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\obj\\Debug\\net10.0\\socialmediaapi.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93D4A84-2EA5-51B3-F6CB-E8B4F8E7A729}|backend\\tests\\socialmediaapi.Tests.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\tests\\socialmediaapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F93D4A84-2EA5-51B3-F6CB-E8B4F8E7A729}|backend\\tests\\socialmediaapi.Tests.csproj|solutionrelative:backend\\tests\\socialmediaapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|c:\\users\\hp\\source\\repos\\socialmedia\\backend\\socialmediaapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7A33B582-53B7-11B3-A58A-6FA5F87D1A8D}|backend\\socialmediaapi.csproj|solutionrelative:backend\\socialmediaapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1979677823\\socialmediaapi.Tests.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\socialmediaapi.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "socialmediaapi.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\socialmediaapi.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\socialmediaapi.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\socialmediaapi.AssemblyInfo.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\socialmediaapi.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T22:11:15.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": ".NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\1028396272\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T22:11:11.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": ".NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "backend\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "backend\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T22:11:11.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "socialmediaapi.Tests.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1979677823\\socialmediaapi.Tests.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1979677823\\socialmediaapi.Tests.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1979677823\\socialmediaapi.Tests.AssemblyInfo.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1979677823\\socialmediaapi.Tests.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T22:11:08.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "socialmediaapi.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\socialmediaapi.csproj",
+              "RelativeDocumentMoniker": "backend\\socialmediaapi.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\socialmediaapi.csproj",
+              "RelativeToolTip": "backend\\socialmediaapi.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-25T22:06:49.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "socialmediaapi.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\tests\\socialmediaapi.Tests.csproj",
+              "RelativeDocumentMoniker": "backend\\tests\\socialmediaapi.Tests.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\tests\\socialmediaapi.Tests.csproj",
+              "RelativeToolTip": "backend\\tests\\socialmediaapi.Tests.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-25T22:04:21.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "socialmediaapi.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\obj\\Debug\\net10.0\\socialmediaapi.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "backend\\obj\\Debug\\net10.0\\socialmediaapi.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\obj\\Debug\\net10.0\\socialmediaapi.AssemblyInfo.cs",
+              "RelativeToolTip": "backend\\obj\\Debug\\net10.0\\socialmediaapi.AssemblyInfo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T21:03:06.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "socialmediaapi.Tests.GlobalUsings.g.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\backend\\tests\\obj\\Debug\\net10.0\\socialmediaapi.Tests.GlobalUsings.g.cs",
+              "RelativeDocumentMoniker": "backend\\backend\\tests\\obj\\Debug\\net10.0\\socialmediaapi.Tests.GlobalUsings.g.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\backend\\tests\\obj\\Debug\\net10.0\\socialmediaapi.Tests.GlobalUsings.g.cs",
+              "RelativeToolTip": "backend\\backend\\tests\\obj\\Debug\\net10.0\\socialmediaapi.Tests.GlobalUsings.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T21:01:41.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T20:34:59.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Db.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Data\\Db.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\Db.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Data\\Db.cs",
+              "RelativeToolTip": "backend\\Data\\Db.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T20:31:45.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoEmail.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Models\\AutoEmail.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\AutoEmail.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Models\\AutoEmail.cs",
+              "RelativeToolTip": "backend\\Models\\AutoEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T20:31:35.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwCoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T20:27:49.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\socialmedia\\backend\\Models\\User.cs",
+              "RelativeToolTip": "backend\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T20:27:36.421Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

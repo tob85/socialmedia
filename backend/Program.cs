@@ -24,7 +24,13 @@ builder.Services
 ;
 builder.Services
     .AddIdentityCore<User>(opts => {
-        opts.SignIn.RequireConfirmedEmail = true;
+        opts.SignIn.RequireConfirmedEmail = false;
+        opts.User.RequireUniqueEmail = true;
+        opts.Password.RequiredLength = 8;
+        opts.Password.RequireDigit = true;
+        opts.Password.RequireNonAlphanumeric = false;
+        opts.Password.RequireUppercase = false;
+        opts.Password.RequireLowercase = true;
     })
     .AddEntityFrameworkStores<Db>()
     .AddDefaultTokenProviders()
@@ -32,10 +38,25 @@ builder.Services
     // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddCors(options =>
+    {
+        options.AddDefaultPolicy(policy =>
+            policy
+                .WithOrigins("http://localhost:5173", "http://127.0.0.1:5173")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials()
+        );
+    });
+}
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+    app.UseCors();
     app.MapOpenApi();
 }
 else
@@ -64,6 +85,12 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast");
 
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<Db>();
+    db.Database.Migrate();
+}
 
 app.Run();
 

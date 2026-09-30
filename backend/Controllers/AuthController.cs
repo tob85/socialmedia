@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 using Backend.Models;
+using Backend.Requests;
 
 namespace Backend.Controllers;
 
@@ -23,9 +24,33 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public IActionResult Register()
+    public async Task<IActionResult> Register([FromBody] RegisterRequest request)
     {
-        return Ok(new { message = "user registered"});
+        if (string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
+        {
+            return BadRequest(new
+            {
+                message = "Email and password are required",
+            });
+        }
+
+        var user = new User
+        {
+            UserName = request.Email,
+            Email = request.Email,
+        };
+
+        var result = await userManager.CreateAsync(user, request.Password);
+        if (!result.Succeeded)
+        {
+            return BadRequest(new
+            {
+                message = "user not registered",
+                errors = result.Errors.Select(error => error.Description),
+            });
+        }
+
+        return Ok(new { message = "user registered" });
     }
 
     [HttpPost("login")]

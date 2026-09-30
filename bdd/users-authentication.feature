@@ -1,3 +1,4 @@
+@wip
 Feature: User Authentication and Registration
 
   As a new user

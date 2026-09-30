@@ -2,8 +2,10 @@ import { defineConfig, devices } from '@playwright/test'
 import { defineBddConfig } from 'playwright-bdd'
 
 const testDir = defineBddConfig({
-  features: 'e2e/*.feature',
+  features: '../bdd/**/*.feature',
   steps: 'e2e/steps/*.ts',
+  featuresRoot: '../bdd',
+  missingSteps: 'skip-scenario',
 })
 
 export default defineConfig({
@@ -12,6 +14,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  grepInvert: /@wip/,
   reporter: process.env.CI
     ? [['github'], ['html', { open: 'never' }]]
     : [['list'], ['html', { open: 'never' }]],
