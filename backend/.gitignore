@@ -483,3 +483,5 @@ $RECYCLE.BIN/
 
 # sqlite
 *.db
+*.db-shm
+*.db-wal
