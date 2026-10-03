@@ -12,6 +12,11 @@ Given('the user opens the register page', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Create an account' })).toBeVisible()
 })
 
+Given('the user opens the login page', async ({ page }) => {
+  await page.goto('/login')
+  await expect(page.getByRole('heading', { name: 'Sign in' })).toBeVisible()
+})
+
 Then('the welcome heading is visible', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'You did it!' })).toBeVisible()
 })

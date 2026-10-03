@@ -15,3 +15,33 @@ export function register(body: RegisterRequest) {
     body,
   })
 }
+
+export type LoginRequest = {
+  email: string
+  password: string
+}
+
+export type LoginResponse = {
+  message: string
+}
+
+export function login(body: LoginRequest) {
+  return api<LoginResponse>('/auth/login', {
+    method: 'POST',
+    body,
+  })
+}
+
+export type MeResponse = {
+  email: string
+}
+
+export function me() {
+  return api<MeResponse>('/auth/me')
+}
+
+export function logout() {
+  return api<{ message: string }>('/auth/logout', {
+    method: 'POST',
+  })
+}
