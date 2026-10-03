@@ -1,2 +1,10 @@
 /.opencode/
 /.hermes/
+
+# Visual Studio (repo-root; backend/.gitignore covers only backend/)
+.vs/
+
+# SQLite sidecar files (*.db is ignored under backend/, not the WAL/SHM pair)
+*.db-shm
+*.db-wal
+
