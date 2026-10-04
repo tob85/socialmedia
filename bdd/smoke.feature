@@ -9,3 +9,8 @@ Feature: Frontend smoke
     Given the user opens the register page
     When the user types an email and password
     Then the email and password fields show the typed values
+
+  Scenario: Login page has input fields
+    Given the user opens the login page
+    When the user types an email and password
+    Then the email and password fields show the typed values
