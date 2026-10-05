@@ -49,10 +49,16 @@ jobs:
           retention-days: 7
       - name: Generate npm audit report
         run: npm audit --json > npm-audit-report.json
-        continue-on-error: true
+      #- name: install jq
+      #  uses: dcarbone/install-jq-action@v4
       - name: Upload npm audit report
         uses: actions/upload-artifact@v7
         with:
           name: npm-audit-report
           path: frontend/npm-audit-report.json
           retention-days: 7
+      - name: Check vulnerable npm packages
+        run: test $(jq .metadata.vulnerabilities.critical frontend/npm-audit-report.json) -eq 0
+      - if: failure()
+        run: echo "There are critical vulnerabilities amongst the installed npm packages"
+
