@@ -1,3 +1,4 @@
+@wip
 Feature: Content Sharing and Posts
 
   As a circle member

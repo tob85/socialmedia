@@ -7,7 +7,7 @@ services:
       '
     container_name: api
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
     image: mcr.microsoft.com/dotnet/sdk:10.0
     ports:
       - 5246:5246
@@ -26,7 +26,8 @@ services:
     ports:
       - 5173:5173
     environment:
-      VITE_API_URL: "api:5246/api"
+      VITE_API_URL: ${VITE_API_URL:-api:5246/api}
+      NODE_ENV: ${NODE_ENV:-development}
     volumes:
       - ./frontend:/app
       - npm-cache:/root/.npm

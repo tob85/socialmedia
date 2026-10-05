@@ -1,2 +1,8 @@
 /.opencode/
 /.hermes/
+
+# Visual Studio (repo-root; backend/.gitignore covers only backend/)
+/.vs/
+
+# local docker env overrides
+/.env

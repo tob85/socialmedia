@@ -1,11 +1,22 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/register">Register</RouterLink>
+      <RouterLink to="/login">Login</RouterLink>
+    </nav>
+  </header>
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+</style>
