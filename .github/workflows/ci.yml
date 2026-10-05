@@ -49,6 +49,7 @@ jobs:
           retention-days: 7
       - name: Generate npm audit report
         run: npm audit --json > npm-audit-report.json
+        continue-on-error: true
       #- name: install jq
       #  uses: dcarbone/install-jq-action@v4
       - name: Upload npm audit report
