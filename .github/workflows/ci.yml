@@ -47,3 +47,12 @@ jobs:
           name: playwright-report
           path: frontend/playwright-report/
           retention-days: 7
+      - name: Generate npm audit report
+        run: npm audit --json > npm-audit-report.json
+        continue-on-error: true
+      - name: Upload npm audit report
+        uses: actions/upload-artifact@v7
+        with:
+          name: npm-audit-report
+          path: frontend/npm-audit-report.json
+          retention-days: 7

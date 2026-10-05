@@ -45,3 +45,6 @@ __screenshots__/
 /playwright/.cache/
 **/.features-gen/**/*.spec.js
 **/.features-gen/**/*.spec.js.map
+
+# npm report
+/npm-audit-report.json
