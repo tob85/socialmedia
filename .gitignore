@@ -2,9 +2,7 @@
 /.hermes/
 
 # Visual Studio (repo-root; backend/.gitignore covers only backend/)
-.vs/
+/.vs/
 
-# SQLite sidecar files (*.db is ignored under backend/, not the WAL/SHM pair)
-*.db-shm
-*.db-wal
-
+# local docker env overrides
+/.env
