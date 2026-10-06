@@ -1,11 +1,22 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section>
-    <h1>You did it!</h1>
+  <section class="welcome">
+    <h1>Activities for parents and kids</h1>
     <p>
-      Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-      documentation
+      A small community for parents who want to share and join activities with their children.
+      Use circles for playdates, outings, and local meetups with other families.
     </p>
   </section>
 </template>
+
+<style scoped>
+.welcome {
+  padding: 0.5rem 0.25rem 0.25rem;
+}
+
+.welcome p {
+  max-width: 38rem;
+  font-size: 1.05rem;
+}
+</style>

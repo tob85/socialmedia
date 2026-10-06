@@ -92,6 +92,7 @@ async function onLogout() {
   display: grid;
   gap: 1rem;
   max-width: 22rem;
+  margin-top: 0.5rem;
 }
 
 .field {
@@ -99,31 +100,18 @@ async function onLogout() {
   gap: 0.35rem;
 }
 
-label {
-  font-weight: 600;
-}
-
-input {
-  padding: 0.5rem 0.6rem;
-  font: inherit;
-}
-
 button {
   justify-self: start;
-  padding: 0.5rem 0.9rem;
-  font: inherit;
-  cursor: pointer;
 }
 
-button:disabled {
-  cursor: wait;
+button[type='button'] {
+  background: var(--white);
+  color: var(--green-700);
+  border: 1px solid var(--green-400);
 }
 
-.success {
-  color: #0a7a32;
-}
-
-.error {
-  color: #b42318;
+button[type='button']:hover {
+  background: var(--green-100);
+  color: var(--green-700);
 }
 </style>

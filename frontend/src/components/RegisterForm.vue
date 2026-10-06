@@ -67,6 +67,7 @@ async function onSubmit() {
   display: grid;
   gap: 1rem;
   max-width: 22rem;
+  margin-top: 0.5rem;
 }
 
 .field {
@@ -74,31 +75,7 @@ async function onSubmit() {
   gap: 0.35rem;
 }
 
-label {
-  font-weight: 600;
-}
-
-input {
-  padding: 0.5rem 0.6rem;
-  font: inherit;
-}
-
 button {
   justify-self: start;
-  padding: 0.5rem 0.9rem;
-  font: inherit;
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: wait;
-}
-
-.success {
-  color: #0a7a32;
-}
-
-.error {
-  color: #b42318;
 }
 </style>

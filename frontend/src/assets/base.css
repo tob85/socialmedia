@@ -1,0 +1,126 @@
+:root {
+  --green-50: #f4fbf6;
+  --green-100: #e4f4e8;
+  --green-200: #c6e6cf;
+  --green-400: #5aaa72;
+  --green-600: #2f7a45;
+  --green-700: #246338;
+  --white: #ffffff;
+  --ink: #1d3b27;
+  --muted: #4d6a56;
+  --danger: #b42318;
+  --shadow: 0 10px 30px rgb(47 122 69 / 8%);
+  --radius: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, var(--green-100), transparent 36%),
+    linear-gradient(180deg, var(--green-50) 0%, var(--white) 70%);
+  font-family: "Segoe UI", "Avenir Next", "Nunito Sans", system-ui, sans-serif;
+  line-height: 1.55;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--green-700);
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--green-700);
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+button {
+  font: inherit;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1.05rem;
+  background: var(--green-600);
+  color: var(--white);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--green-700);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--green-200);
+  border-radius: 0.7rem;
+  padding: 0.65rem 0.75rem;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid var(--green-400);
+  outline-offset: 1px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--green-700);
+}
+
+.success {
+  color: var(--green-700);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.circle-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.circle-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--green-200);
+  border-radius: 0.9rem;
+  background: var(--white);
+}
+
+.circle-list .meta {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}

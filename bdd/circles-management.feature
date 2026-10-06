@@ -1,10 +1,10 @@
-@wip
 Feature: Circle Creation and Management
 
   As a user
   I want to create and join smaller groups called "circles"
   So that I can create focused communities with friends, colleagues, or family
 
+  @wip
   @circles
   @management
   Scenario Outline: User creates a new circle
@@ -23,8 +23,9 @@ Feature: Circle Creation and Management
       | Family Reunion    | family      | invite_only | For upcoming reunion planning   |
 
 
+  @wip
   @circles
-  @membership  
+  @membership
   Scenario Outline: User joins an existing circle
 
     When logged in user clicks "Join" button on a public circle page
@@ -39,11 +40,21 @@ Feature: Circle Creation and Management
       | Private Chat Room | Yes             | Admin approval req | Pending, awaiting admin |
 
 
+  @ready
   @circles
-  @membership  
+  @membership
   Scenario: User views their own circles dashboard
 
     When user navigates to "My Circles" section
     Then all circles where user is a member should be listed
     And the circle owner status should highlight for owned circles
     And option to leave any circle (except owned ones) should appear
+
+  @ready
+  @circles
+  @membership
+  Scenario: User views circles they can join
+
+    When user navigates to "Find Circles" section
+    Then circles the user is not a member of should be listed
+    And option to join a public circle should appear

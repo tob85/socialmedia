@@ -18,7 +18,7 @@ Given('the user opens the login page', async ({ page }) => {
 })
 
 Then('the welcome heading is visible', async ({ page }) => {
-  await expect(page.getByRole('heading', { name: 'You did it!' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Activities for parents and kids' })).toBeVisible()
 })
 
 When('the user types an email and password', async ({ page }) => {
