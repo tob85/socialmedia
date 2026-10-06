@@ -28,6 +28,10 @@ export function listAvailableCircles() {
   return api<AvailableCirclesResponse>('/circles/available')
 }
 
+export function getCircle(circleId: string) {
+  return api<Circle>(`/circles/${circleId}`)
+}
+
 export function joinCircle(circleId: string) {
   return api<{ message: string }>('/circles/join', {
     method: 'POST',
