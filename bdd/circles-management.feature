@@ -49,3 +49,12 @@ Feature: Circle Creation and Management
     Then all circles where user is a member should be listed
     And the circle owner status should highlight for owned circles
     And option to leave any circle (except owned ones) should appear
+
+  @ready
+  @circles
+  @membership
+  Scenario: User views circles they can join
+
+    When user navigates to "Find Circles" section
+    Then circles the user is not a member of should be listed
+    And option to join a public circle should appear
