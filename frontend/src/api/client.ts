@@ -1,14 +1,22 @@
+import { handleMock, useMocks } from './mock'
+
 const apiUrl = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
 
-type RequestOptions = {
+export type RequestOptions = {
   method?: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
   body?: unknown
 }
 
 export async function api<T>(path: string, options: RequestOptions = {}): Promise<T> {
+  const method = options.method ?? 'GET'
+
+  if (useMocks) {
+    return handleMock<T>(path, method, options.body)
+  }
+
   const url = `${apiUrl}${path.startsWith('/') ? path : `/${path}`}`
   const response = await fetch(url, {
-    method: options.method ?? 'GET',
+    method,
     headers: {
       Accept: 'application/json',
       ...(options.body !== undefined ? { 'Content-Type': 'application/json' } : {}),
@@ -18,7 +26,7 @@ export async function api<T>(path: string, options: RequestOptions = {}): Promis
   })
 
   if (!response.ok) {
-    throw new Error(await readError(response, `${options.method ?? 'GET'} ${path} failed: ${response.status}`))
+    throw new Error(await readError(response, `${method} ${path} failed: ${response.status}`))
   }
 
   if (response.status === 204) {
