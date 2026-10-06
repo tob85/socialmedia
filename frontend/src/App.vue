@@ -9,6 +9,7 @@
         <RouterLink to="/register">Register</RouterLink>
         <RouterLink to="/login">Login</RouterLink>
         <RouterLink to="/circles">My Circles</RouterLink>
+        <RouterLink to="/circles/find">Find Circles</RouterLink>
       </nav>
     </header>
     <main>
