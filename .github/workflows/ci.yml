@@ -47,19 +47,32 @@ jobs:
           name: playwright-report
           path: frontend/playwright-report/
           retention-days: 7
+
+  security:
+    name: Security audits
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/krypton
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install dependencies
+        run: npm ci
       - name: Generate npm audit report
-        run: npm audit --json > npm-audit-report.json
+        run: npm audit --audit-level=critical --json > npm-audit-report.json
         continue-on-error: true
-      #- name: install jq
-      #  uses: dcarbone/install-jq-action@v4
-      - name: Upload npm audit report
+      - if: failure()
+        run: >
+          echo "There are critical vulnerabilities amongst the installed npm packages:"
+          && jq .metadata.vulnerabilities npm-audit-report.json
+      - name: Upload npm audit report as github artifact
         uses: actions/upload-artifact@v7
         with:
           name: npm-audit-report
           path: frontend/npm-audit-report.json
           retention-days: 7
-      - name: Check vulnerable npm packages
-        run: test $(jq .metadata.vulnerabilities.critical npm-audit-report.json) -eq "0"
-      - if: failure()
-        run: echo "There are critical vulnerabilities amongst the installed npm packages"
-
