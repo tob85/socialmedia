@@ -50,7 +50,7 @@ onMounted(() => {
         :data-role="circle.role"
       >
         <div>
-          <strong>{{ circle.name }}</strong>
+          <RouterLink class="circle-name" :to="`/circles/${circle.id}`">{{ circle.name }}</RouterLink>
           <span v-if="circle.role === 'owner'" class="owner-badge">Owner</span>
           <p class="meta">{{ circle.visibility }} · {{ circle.role }}</p>
         </div>
@@ -68,6 +68,17 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.circle-name {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.circle-name:hover {
+  color: var(--green-700);
+  text-decoration: underline;
+}
+
 .circle-list li.owner {
   border-color: var(--green-400);
   background: var(--green-50);

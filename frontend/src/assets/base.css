@@ -73,7 +73,8 @@ button:disabled {
   opacity: 0.7;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   border: 1px solid var(--green-200);
   border-radius: 0.7rem;
@@ -83,7 +84,8 @@ input {
   font: inherit;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: 2px solid var(--green-400);
   outline-offset: 1px;
 }

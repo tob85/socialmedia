@@ -3,6 +3,8 @@ export type MockResult = {
   body?: unknown
 }
 
+export type MockHandler = (body?: unknown, params?: Record<string, string>) => MockResult
+
 type MockUser = {
   email: string
   password: string
@@ -40,6 +42,26 @@ let memberships: Membership[] = [
   { circleId: 'circle-2', role: 'member' },
 ]
 
+type StoredPost = {
+  id: string
+  circleId: string
+  author: string
+  content: string
+  createdAt: string
+}
+
+let postSeq = 2
+
+let posts: StoredPost[] = [
+  {
+    id: 'post-1',
+    circleId: 'circle-1',
+    author: 'ada@example.com',
+    content: 'Park meetup Saturday at 10?',
+    createdAt: '2026-10-06T08:00:00.000Z',
+  },
+]
+
 function asRecord(body: unknown) {
   return (body ?? {}) as Record<string, string>
 }
@@ -59,7 +81,20 @@ function availableCircles() {
   return catalog.filter((circle) => !memberIds.has(circle.id))
 }
 
-export const handlers: Record<string, (body?: unknown) => MockResult> = {
+function membershipFor(circleId: string) {
+  return memberships.find((item) => item.circleId === circleId)
+}
+
+function circleWithRole(circleId: string) {
+  const circle = catalog.find((item) => item.id === circleId)
+  const membership = membershipFor(circleId)
+  if (!circle || !membership) {
+    return null
+  }
+  return { ...circle, role: membership.role }
+}
+
+export const handlers: Record<string, MockHandler> = {
   'POST /auth/register'(body) {
     const { email, password } = asRecord(body)
     if (!email || !password) {
@@ -135,5 +170,45 @@ export const handlers: Record<string, (body?: unknown) => MockResult> = {
     }
     memberships = memberships.filter((item) => item.circleId !== circleId)
     return { status: 200, body: { message: 'left circle' } }
+  },
+
+  'GET /circles/:id'(_body, params) {
+    const circle = circleWithRole(params?.id ?? '')
+    if (!circle) {
+      return { status: 404, body: { message: 'Circle not found' } }
+    }
+    return { status: 200, body: circle }
+  },
+
+  'GET /circles/:id/posts'(_body, params) {
+    const circleId = params?.id ?? ''
+    if (!membershipFor(circleId)) {
+      return { status: 403, body: { message: 'Not a member of this circle' } }
+    }
+    const circlePosts = posts
+      .filter((post) => post.circleId === circleId)
+      .slice()
+      .sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
+    return { status: 200, body: { posts: circlePosts } }
+  },
+
+  'POST /circles/:id/posts'(body, params) {
+    const circleId = params?.id ?? ''
+    if (!membershipFor(circleId)) {
+      return { status: 403, body: { message: 'Not a member of this circle' } }
+    }
+    const { content } = asRecord(body)
+    if (!content?.trim()) {
+      return { status: 400, body: { message: 'Post content is required' } }
+    }
+    const post: StoredPost = {
+      id: `post-${postSeq++}`,
+      circleId,
+      author: currentEmail ?? 'ada@example.com',
+      content: content.trim(),
+      createdAt: new Date().toISOString(),
+    }
+    posts = [post, ...posts]
+    return { status: 200, body: post }
   },
 }
