@@ -59,7 +59,7 @@ jobs:
           path: frontend/npm-audit-report.json
           retention-days: 7
       - name: Check vulnerable npm packages
-        run: test $(jq .metadata.vulnerabilities.critical frontend/npm-audit-report.json) -eq 0
+        run: test $(jq .metadata.vulnerabilities.critical npm-audit-report.json) -eq 0
       - if: failure()
         run: echo "There are critical vulnerabilities amongst the installed npm packages"
 
